@@ -110,8 +110,9 @@ body {
 
 @media (max-width: 767px) {
 
-    .hero-height {
-        min-height: auto !important;
+    #home .hero-height {
+        min-height: 0 !important;
+        height: auto !important;
     }
 
 }
