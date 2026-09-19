@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+/* Danyzaa Café - Custom CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Menu Images */
+
+.menu-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Laptop / Desktop */
+
+@media (min-width: 768px) {
+    #menuContainer .menu-image {
+        height: 350px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    #menuContainer .menu-image {
+        height: 180px;
+    }
+}
+
+
+/* Blog Images */
+
+.blog-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* Menu Item Hover */
+
+.menu-item {
+    transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Cart */
+
+#cartItems .cart-item {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cart-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Café Name */
+
+.cafe-name {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+
+/* Mobile Cart */
+
+@media (max-width: 767px) {
+
+    .cart-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    #cartItems .cart-item .fw-bold {
+        font-size: 1.5rem;
+    }
+
+    #cartItems .cart-item .text-secondary {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .cafe-name{
+        font-size: 5rem;
+    }
+}
