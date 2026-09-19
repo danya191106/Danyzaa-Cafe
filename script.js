@@ -345,10 +345,32 @@ function decreaseQuantity(index) {
 
 function removeItem(index) {
 
+    const removedItem = cart[index];
+
     cart.splice(index, 1);
 
-    updateCart();
+    const menuButton = document.querySelector(
+        `.add-cart[data-name="${removedItem.name}"]`
+    );
 
+    if (menuButton) {
+        menuButton.textContent = "Add to Cart";
+
+        menuButton.classList.remove("btn-success");
+        menuButton.classList.add("btn-dark");
+
+        menuButton.onclick = null;
+
+        const tooltip = bootstrap.Tooltip.getInstance(menuButton);
+
+        if (tooltip) {
+            tooltip.setContent({
+                ".tooltip-inner": "Add this item to cart"
+            });
+        }
+    }
+
+    updateCart();
 }
 
 
