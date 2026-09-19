@@ -112,7 +112,6 @@ body {
 
     #home .hero-height {
         min-height: 0 !important;
-        height: auto !important;
     }
 
 }
