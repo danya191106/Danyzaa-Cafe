@@ -111,7 +111,7 @@ body {
 @media (max-width: 767px) {
 
     .hero-height {
-        min-height: auto;
+        min-height: auto !important;
     }
 
 }
