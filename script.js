@@ -332,14 +332,14 @@ function decreaseQuantity(index) {
 
     } else {
 
-        cart.splice(index, 1);
+        removeItem(index);
 
+        return;
     }
 
     updateCart();
 
 }
-
 
 /* Remove item */
 
