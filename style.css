@@ -106,3 +106,12 @@ body {
         font-size: 5rem;
     }
 }
+/* Mobile Hero */
+
+@media (max-width: 767px) {
+
+    .hero-height {
+        min-height: auto;
+    }
+
+}
