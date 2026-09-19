@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danyzaa Cafe</title>
+    <!--Bootstrap 5 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container">
+
+            <!--Brand-->
+            <a class="navbar-brand fw-bold" href="#">Danyzaa Cafe</a>
+
+            <!--Navbar Toggler-->
+            <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#cafeNavbar" 
+            aria-controls="cafeNavbar"
+            aria-expanded="false"
+            aria-label="Toogle navigation" >
+        <span class="navbar-toggle-icon">☰</span></button>
+
+        <!--Navbar Menu-->
+        <div class="collapse navbar-collapse" id="cafeNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+                <!--Menu Dropdown-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" 
+                    href="#" 
+                    role="button" 
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Menu</a>
+
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#menu">All Items</a></li>
+                        <li><a class="dropdown-item" href="#menu">Breakfast</a></li>
+                        <li><a class="dropdown-item" href="#menu">Main Course</a></li>
+                        <li><a class="dropdown-item" href="#menu">Desserts</a></li>
+                        <li><a class="dropdown-item" href="#menu">Drinks</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+
+                <!--Cart-->
+                <li class="nav-item ms-lg-3"><a class="btn btn-light btn-sm" href="#cart">Cart <span id="cartCount" class="badge text-bg-danger">0</span></a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+<!-- =========================
+     PHASE 3 - HERO SECTION
+========================= -->
+
+<section id="home" class="bg-dark text-white">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+
+            <div class="col-lg-7">
+
+                <p class="cafe-name display-2 display-md-1 fw-bold text-warning">
+                    DANYZAA CAFE
+                </p>
+
+                <h1 class="display-5 fw-bold">
+                    Taste the Moment.
+                </h1>
+
+                <p class="lead text-light">
+                    Freshly brewed coffee, delicious food, and a cozy
+                    place to enjoy every moment.
+                </p>
+
+                <div class="mt-4">
+                    <a href="#menu" class="btn btn-warning btn-lg me-2">
+                        Explore Menu
+                    </a>
+
+                    <a href="#reservation"
+                       class="btn btn-outline-light btn-lg">
+                        Reserve a Table
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 text-center mt-5 mt-lg-0">
+
+                <img src="images/cafe-hero.png"
+                     alt="Danyzaa Cafe"
+                     class="img-fluid w-100 rounded-4 shadow mb-4 mb-lg-0">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     PHASE 4 - ABOUT SECTION
+========================= -->
+
+<section id="about" class="py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img src="images/about-cafe.jpg"
+                     alt="Inside Danyzaa Cafe"
+                     class="img-fluid rounded-4 shadow">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <p class="text-warning fw-semibold">
+                    About Us
+                </p>
+
+                <h2 class="display-5 fw-bold">
+                    More Than Just Coffee
+                </h2>
+
+                <p class="text-secondary">
+                    Danyzaa Cafe is a cozy place where great coffee,
+                    delicious food, and memorable moments come together.
+                </p>
+
+                <p class="text-secondary">
+                    From a quick morning breakfast to a relaxing evening
+                    with friends, we serve freshly prepared food and
+                    carefully brewed drinks.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+
+                    <div class="p-3 bg-light rounded-3">
+                        <h5 class="fw-bold mb-1">Fresh</h5>
+                        <small>Quality ingredients</small>
+                    </div>
+
+                    <div class="p-3 bg-light rounded-3">
+                        <h5 class="fw-bold mb-1">Cozy</h5>
+                        <small>Comfortable atmosphere</small>
+                    </div>
+
+                    <div class="p-3 bg-light rounded-3">
+                        <h5 class="fw-bold mb-1">Tasty</h5>
+                        <small>Made with care</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHASE 5 - MENU SECTION
+========================= -->
+
+<!-- Menu Section -->
+<section id="menu" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-warning fw-semibold">
+                Our Menu
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                Delicious Choices
+            </h2>
+
+            <p class="text-secondary">
+                Find your favourite food and drinks.
+            </p>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="row justify-content-center mb-4">
+
+            <div class="col-md-6">
+
+                <input type="text"
+                       id="menuSearch"
+                       class="form-control form-control-lg"
+                       placeholder="Search menu items...">
+
+            </div>
+
+        </div>
+
+
+        <!-- Category Tabs -->
+        <ul class="nav nav-pills justify-content-center mb-5"
+            id="menuTabs">
+
+            <li class="nav-item">
+                <button class="nav-link active category-btn"
+                        data-category="All">
+                    All
+                </button>
+            </li>
+
+            <li class="nav-item">
+                <button class="nav-link category-btn"
+                        data-category="Breakfast">
+                    Breakfast
+                </button>
+            </li>
+
+            <li class="nav-item">
+                <button class="nav-link category-btn"
+                        data-category="Main Course">
+                    Main Course
+                </button>
+            </li>
+
+            <li class="nav-item">
+                <button class="nav-link category-btn"
+                        data-category="Desserts">
+                    Desserts
+                </button>
+            </li>
+
+            <li class="nav-item">
+                <button class="nav-link category-btn"
+                        data-category="Drinks">
+                    Drinks
+                </button>
+            </li>
+
+        </ul>
+
+
+        <!-- Menu Cards -->
+        <div class="row g-4" id="menuContainer">
+
+
+            <!-- Item 1 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Breakfast"
+                 data-name="Classic Pancakes"
+                 data-price="180">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/pancakes.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Classic Pancakes">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-warning mb-2">
+                                    Breakfast
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Classic Pancakes
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Soft pancakes served with fresh fruits
+                                    and maple syrup.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹180</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Classic Pancakes"
+                                            data-price="180"
+                                            data-image="images/pancakes.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 2 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Breakfast"
+                 data-name="Cheese Omelette"
+                 data-price="150">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/omelette.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Cheese Omelette">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-warning mb-2">
+                                    Breakfast
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Cheese Omelette
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Fluffy omelette filled with melted cheese.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹150</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Cheese Omelette"
+                                            data-price="150"
+                                            data-image="images/omelette.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 3 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Main Course"
+                 data-name="Creamy Pasta"
+                 data-price="240">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/pasta.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Creamy Pasta">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-danger mb-2">
+                                    Main Course
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Creamy Pasta
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Creamy pasta prepared with herbs and
+                                    fresh vegetables.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹240</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Creamy Pasta"
+                                            data-price="240"
+                                            data-image="images/pasta.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 4 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Main Course"
+                 data-name="Veg Burger"
+                 data-price="220">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/burger.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Veg Burger">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-danger mb-2">
+                                    Main Course
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Veg Burger
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Crispy vegetable patty with fresh
+                                    vegetables and sauce.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹220</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Veg Burger"
+                                            data-price="220"
+                                            data-image="images/burger.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 5 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Desserts"
+                 data-name="Chocolate Brownie"
+                 data-price="160">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/brownie.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Chocolate Brownie">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-primary mb-2">
+                                    Desserts
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Chocolate Brownie
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Rich chocolate brownie with a soft
+                                    centre.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹160</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Chocolate Brownie"
+                                            data-price="160"
+                                            data-image="images/brownie.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 6 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Desserts"
+                 data-name="Cheesecake"
+                 data-price="190">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/cheesecake.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Cheesecake">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-primary mb-2">
+                                    Desserts
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Cheesecake
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Creamy cheesecake with a delicious
+                                    biscuit base.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹190</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Cheesecake"
+                                            data-price="190"
+                                            data-image="images/cheesecake.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 7 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Drinks"
+                 data-name="Cappuccino"
+                 data-price="140">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/cappuccino.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Cappuccino">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-success mb-2">
+                                    Drinks
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Cappuccino
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Rich espresso topped with creamy
+                                    steamed milk.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹140</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Cappuccino"
+                                            data-price="140"
+                                            data-image="images/cappuccino.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 8 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Drinks"
+                 data-name="Iced Latte"
+                 data-price="160">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/iced-latte.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Iced Latte">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-success mb-2">
+                                    Drinks
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Iced Latte
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Chilled espresso with smooth milk and ice.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹160</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Iced Latte"
+                                            data-price="160"
+                                            data-image="images/iced-latte.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 9 -->
+            <div class="col-md-6 col-lg-4 menu-item"
+                 data-category="Drinks"
+                 data-name="Fresh Lemonade"
+                 data-price="100">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="row g-0">
+
+                        <div class="col-4 col-md-12">
+
+                            <img src="images/lemonade.jpg"
+                                 class="w-100 menu-image rounded-start"
+                                 alt="Fresh Lemonade">
+
+                        </div>
+
+                        <div class="col-8 col-md-12">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-success mb-2">
+                                    Drinks
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Fresh Lemonade
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Refreshing homemade lemonade with fresh
+                                    lemon juice.
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <strong>₹100</strong>
+
+                                    <button class="btn btn-dark add-cart"
+                                            data-name="Fresh Lemonade"
+                                            data-price="100"
+                                            data-image="images/lemonade.jpg"
+                                            data-bs-toggle="tooltip"
+                                            title="Add this item to cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <p id="noResults"
+           class="text-center text-secondary mt-4 d-none">
+            No menu items found.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PHASE 6 - CART SECTION
+========================= -->
+
+<section id="cart" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-warning fw-semibold">
+                Your Order
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                Shopping Cart
+            </h2>
+
+        </div>
+
+
+        <div id="cartContainer">
+
+            <div id="emptyCart"
+                 class="text-center py-5">
+
+                <h5 class="text-secondary">
+                    Your cart is empty.
+                </h5>
+
+                <a href="#menu"
+                   class="btn btn-dark mt-3">
+                    Browse Menu
+                </a>
+
+            </div>
+
+
+            <div id="cartItems"
+                 class="d-none">
+            </div>
+
+
+            <div id="cartSummary"
+                 class="card shadow-sm mt-4 d-none">
+
+                <div class="card-body">
+
+                    <div class="d-flex justify-content-between">
+
+                        <h5 class="fw-bold">
+                            Total
+                        </h5>
+
+                        <h5 class="fw-bold">
+                            ₹<span id="cartTotal">0</span>
+                        </h5>
+
+                    </div>
+
+                    <button class="btn btn-warning w-100 mt-3"
+                            id="checkoutBtn">
+                        Proceed to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHASE 7 - OFFERS
+========================= -->
+
+<section id="offers" class="py-5 bg-dark text-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-warning fw-semibold">
+                Special Offers
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                Today's Deals
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow">
+
+                    <div class="card-body text-dark">
+
+                        <span class="badge text-bg-danger mb-3">
+                            20% OFF
+                        </span>
+
+                        <h4 class="card-title fw-bold">
+                            Breakfast Combo
+                        </h4>
+
+                        <p class="card-text">
+                            Get a delicious breakfast combo with
+                            coffee at a special price.
+                        </p>
+
+                        <button class="btn btn-dark"
+                                data-bs-toggle="modal"
+                                data-bs-target="#offerModal">
+                            View Offer
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow">
+
+                    <div class="card-body text-dark">
+
+                        <span class="badge text-bg-success mb-3">
+                            SPECIAL
+                        </span>
+
+                        <h4 class="card-title fw-bold">
+                            Dessert & Coffee
+                        </h4>
+
+                        <p class="card-text">
+                            Pair your favourite dessert with a freshly
+                            brewed coffee.
+                        </p>
+
+                        <button class="btn btn-dark"
+                                data-bs-toggle="modal"
+                                data-bs-target="#offerModal">
+                            View Offer
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow">
+
+                    <div class="card-body text-dark">
+
+                        <span class="badge text-bg-warning mb-3">
+                            WEEKEND
+                        </span>
+
+                        <h4 class="card-title fw-bold">
+                            Weekend Treat
+                        </h4>
+
+                        <p class="card-text">
+                            Enjoy selected café favourites with
+                            exclusive weekend pricing.
+                        </p>
+
+                        <button class="btn btn-dark"
+                                data-bs-toggle="modal"
+                                data-bs-target="#offerModal">
+                            View Offer
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Offer Modal -->
+
+<div class="modal fade"
+     id="offerModal"
+     tabindex="-1"
+     aria-labelledby="offerModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title fw-bold"
+                    id="offerModalLabel">
+                    Danyzaa Cafe Offer
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                    Enjoy our special café offers while they last.
+                    Visit Danyzaa Cafe and make your moment delicious.
+                </p>
+
+                <span class="badge text-bg-warning">
+                    Limited Time Offer
+                </span>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-dark"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+
+                <a href="#reservation"
+                   class="btn btn-warning"
+                   data-bs-dismiss="modal"
+                   onclick="goToReservation(event)">Reserve Now</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     PHASE 8 - NAVS, TABS,
+     DROPDOWN, LIST GROUP
+========================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-warning fw-semibold">
+                Cafe Information
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                Know More About Us
+            </h2>
+
+        </div>
+
+
+        <!-- Tabs -->
+
+        <ul class="nav nav-tabs justify-content-center"
+            role="tablist">
+
+            <li class="nav-item" role="presentation">
+
+                <button class="nav-link active"
+                        data-bs-toggle="tab"
+                        data-bs-target="#specialities"
+                        type="button">
+                    Specialities
+                </button>
+
+            </li>
+
+            <li class="nav-item" role="presentation">
+
+                <button class="nav-link"
+                        data-bs-toggle="tab"
+                        data-bs-target="#services"
+                        type="button">
+                    Services
+                </button>
+
+            </li>
+
+        </ul>
+
+
+        <div class="tab-content border border-top-0 p-4">
+
+
+            <div class="tab-pane fade show active"
+                 id="specialities">
+
+                <h5 class="fw-bold">
+                    Our Specialities
+                </h5>
+
+                <p class="text-secondary">
+                    Fresh coffee, tasty breakfast, delicious desserts
+                    and refreshing drinks.
+                </p>
+
+            </div>
+
+
+            <div class="tab-pane fade"
+                 id="services">
+
+                <h5 class="fw-bold">
+                    Our Services
+                </h5>
+
+                <p class="text-secondary">
+                    Dine-in, takeaway and table reservations are
+                    available.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Dropdown -->
+
+        <div class="dropdown text-center mt-4">
+
+            <button class="btn btn-outline-dark dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown">
+                Explore Cafe
+            </button>
+
+            <ul class="dropdown-menu">
+
+                <li>
+                    <a class="dropdown-item"
+                       href="#menu">
+                        Explore Menu
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item"
+                       href="#offers">
+                        View Offers
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item"
+                       href="#reservation">
+                        Reserve Table
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- List Group -->
+
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-md-6">
+
+                <h5 class="fw-bold mb-3">
+                    Why Visit Us?
+                </h5>
+
+                <ul class="list-group">
+
+                    <li class="list-group-item">
+                        Freshly prepared food
+                    </li>
+
+                    <li class="list-group-item">
+                        Quality coffee
+                    </li>
+
+                    <li class="list-group-item">
+                        Comfortable atmosphere
+                    </li>
+
+                    <li class="list-group-item">
+                        Friendly service
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHASE 9 - BLOG
+========================= -->
+
+<section id="blog" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-warning fw-semibold">
+                Cafe Journal
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                From Our Blog
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/blog-coffee.jpg"
+                         class="card-img-top blog-image"
+                         alt="Coffee">
+
+                    <div class="card-body">
+
+                        <span class="badge text-bg-dark mb-2">
+                            Coffee
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            A Simple Guide to Great Coffee
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            Learn about the little things that make
+                            a cup of coffee enjoyable.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-outline-dark btn-sm">
+                            Read More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/blog-breakfast.jpg"
+                         class="card-img-top blog-image"
+                         alt="Breakfast">
+
+                    <div class="card-body">
+
+                        <span class="badge text-bg-warning mb-2">
+                            Food
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            Why Breakfast Matters
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            Start your day with a delicious and
+                            satisfying breakfast.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-outline-dark btn-sm">
+                            Read More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/blog-dessert.jpg"
+                         class="card-img-top blog-image"
+                         alt="Dessert">
+
+                    <div class="card-body">
+
+                        <span class="badge text-bg-danger mb-2">
+                            Desserts
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            The Perfect Dessert Pairing
+                        </h5>
+
+                        <p class="card-text text-secondary">
+                            Discover how coffee and desserts create
+                            the perfect combination.
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-outline-dark btn-sm">
+                            Read More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Pagination -->
+
+        <nav class="mt-5"
+             aria-label="Blog pagination">
+
+            <ul class="pagination justify-content-center">
+
+                <li class="page-item active">
+                    <a class="page-link" href="#">
+                        1
+                    </a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        2
+                    </a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        3
+                    </a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        Next
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHASE 10 - RESERVATION
+========================= -->
+
+<section id="reservation" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-warning fw-semibold">
+                Reservation
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                Reserve Your Table
+            </h2>
+
+            <p class="text-secondary">
+                Plan your next cafe visit with us.
+            </p>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <form id="reservationForm"
+                      class="p-4 p-md-5 bg-light rounded-4 shadow-sm bg-dark text-white">
+
+
+                    <div class="row g-4">
+
+
+                        <div class="col-md-6">
+
+                            <label for="name"
+                                   class="form-label">
+                                Full Name
+                            </label>
+
+                            <input type="text"
+                                   id="name"
+                                   class="form-control"
+                                   placeholder="Enter your name">
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label for="email"
+                                   class="form-label">
+                                Email
+                            </label>
+
+                            <input type="email"
+                                   id="email"
+                                   class="form-control"
+                                   placeholder="Enter your email">
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label for="date"
+                                   class="form-label">
+                                Date
+                            </label>
+
+                            <input type="date"
+                                   id="date"
+                                   class="form-control">
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label for="guests"
+                                   class="form-label">
+                                Guests
+                            </label>
+
+                            <select id="guests"
+                                    class="form-select">
+
+                                <option value="">
+                                    Select guests
+                                </option>
+
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5+</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="col-12">
+
+                            <label for="message"
+                                   class="form-label">
+                                Special Request
+                            </label>
+
+                            <textarea id="message"
+                                      class="form-control"
+                                      rows="4"
+                                      placeholder="Any special request?">
+                            </textarea>
+
+                        </div>
+
+
+                        <div class="col-12">
+
+                            <button type="submit"
+                                    class="btn btn-warning btn-lg w-100">
+                                Reserve Table
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="formMessage"
+                         class="mt-4">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHASE 11 - REVIEWS
+========================= -->
+
+<section class="py-5 bg-dark text-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-warning fw-semibold">
+                Customer Reviews
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                What Our Customers Say
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100">
+
+                    <div class="card-body text-dark">
+
+                        <h5 class="fw-bold">
+                            Amazing Coffee
+                        </h5>
+
+                        <p>
+                            “The coffee was fresh and the atmosphere
+                            was really comfortable.”
+                        </p>
+
+                        <span class="badge text-bg-warning">
+                            ★★★★★
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100">
+
+                    <div class="card-body text-dark">
+
+                        <h5 class="fw-bold">
+                            Lovely Place
+                        </h5>
+
+                        <p>
+                            “A nice place to spend time with friends
+                            and enjoy good food.”
+                        </p>
+
+                        <span class="badge text-bg-warning">
+                            ★★★★★
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100">
+
+                    <div class="card-body text-dark">
+
+                        <h5 class="fw-bold">
+                            Delicious Food
+                        </h5>
+
+                        <p>
+                            “The desserts were delicious and the
+                            service was friendly.”
+                        </p>
+
+                        <span class="badge text-bg-warning">
+                            ★★★★★
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Opening Hours + Location -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+
+            <div class="col-md-6">
+
+                <h3 class="fw-bold mb-4">
+                    Opening Hours
+                </h3>
+
+                <ul class="list-group">
+
+                    <li class="list-group-item d-flex
+                               justify-content-between">
+                        Monday - Friday
+                        <span>8:00 AM - 9:00 PM</span>
+                    </li>
+
+                    <li class="list-group-item d-flex
+                               justify-content-between">
+                        Saturday
+                        <span>9:00 AM - 10:00 PM</span>
+                    </li>
+
+                    <li class="list-group-item d-flex
+                               justify-content-between">
+                        Sunday
+                        <span>9:00 AM - 8:00 PM</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <h3 class="fw-bold mb-4">
+                    Find Us
+                </h3>
+
+                <div class="p-4 bg-light rounded-4">
+
+                    <p class="mb-2">
+                        <strong>Location:</strong>
+                        Danyzaa Cafe, Main Street
+                    </p>
+
+                    <p class="mb-2">
+                        <strong>Phone:</strong>
+                        +91 98765 43210
+                    </p>
+
+                    <p class="mb-0">
+                        <strong>Email:</strong>
+                        hello@danyzaacafe.com
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BREADCRUMB
+========================= -->
+
+<section class="bg-light py-3">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb mb-0">
+
+                <li class="breadcrumb-item">
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li class="breadcrumb-item active"
+                    aria-current="page">
+                    Danyzaa Cafe
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="bg-dark text-white py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-md-5">
+
+                <h4 class="fw-bold">
+                    Danyzaa Cafe
+                </h4>
+
+                <p class="text-light">
+                    Fresh food, great coffee and memorable moments.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <h5 class="fw-bold">
+                    Quick Links
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2">
+                        <a href="#home"
+                           class="text-white text-decoration-none">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#menu"
+                           class="text-white text-decoration-none">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#offers"
+                           class="text-white text-decoration-none">
+                            Offers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#reservation"
+                           class="text-white text-decoration-none">
+                            Reservation
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h5 class="fw-bold">
+                    Contact
+                </h5>
+
+                <p class="mb-1">
+                    Main Street
+                </p>
+
+                <p class="mb-1">
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    hello@danyzaacafe.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <hr class="my-4">
+
+
+        <div class="text-center">
+
+            <p class="mb-0">
+                © 2026 Danyzaa Cafe. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+    
+    <!--Script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
